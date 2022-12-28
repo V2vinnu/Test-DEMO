@@ -21,7 +21,7 @@ pipeline {
 
         stage('maven integration test'){
             steps{
-                scrip{
+                script{
                     sh 'mvn verify -DskipUnitTest'
                 }
             }
