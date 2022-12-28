@@ -1,9 +1,11 @@
-pipeline{
-    anyagent{
-        stages{
-            stage('git checkout'){
+pipeline {
+    any agent 
+        stages {
+            stage('git checkout') {
+                steps{
                git branch: 'main', url: 'https://github.com/V2vinnu/Test-DEMO.git'
             }
+            }
         }
-    }
+    
 }
