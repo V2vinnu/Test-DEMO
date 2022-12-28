@@ -8,13 +8,13 @@ pipeline {
             }
         
       
-            stage('UNIT testing'){
+            stage('maven build'){
             
             steps{
                 
                 script{
                     
-                    sh 'mvn test'
+                    sh 'mvn clean install'
                 }
             }
         }
