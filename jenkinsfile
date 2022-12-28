@@ -8,7 +8,7 @@ pipeline {
             }
         
       
-            stage('Maven Unit test'){
+            stage('Maven Unittest'){
             
             steps{
                 
