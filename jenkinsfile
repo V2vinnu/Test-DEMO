@@ -1,7 +1,7 @@
 pipeline{
     anyagent{
         stages{
-            stage(git checkout){
+            stage('git checkout'){
                git branch: 'main', url: 'https://github.com/V2vinnu/Test-DEMO.git'
             }
         }
