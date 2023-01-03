@@ -43,6 +43,7 @@ pipeline {
                 }
                 }
             }
+        }
 
         stage('sonar quality gates'){
             steps{
@@ -51,7 +52,7 @@ pipeline {
                 }
             }
         }    
-        }
+        
 
     }
 }
