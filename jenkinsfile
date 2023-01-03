@@ -69,7 +69,7 @@ pipeline {
                     ],
                      credentialsId: 'nexus-auth',
                      groupId: 'com.example',
-                      nexusUrl: '43.204.232.107:8081',
+                      nexusUrl: '3.108.237.64:8081',
                        nexusVersion: 'nexus3',
                         protocol: 'http',
                          repository: nexusrepo,
@@ -81,7 +81,7 @@ pipeline {
         stage('docker image build'){
             steps{
                 script{
-                    sh 'docker image build -t $JOB_NAME:v1.BUILD_ID'
+                    sh 'docker image build -t $JOB_NAME:v1.BUILD_ID .'
                     sh 'docker image tag $JOB_NAME:v1.BUILD_ID vinnuvinod752/$JOB_NAME:v1.BUILD_ID'
                     sh 'docker image tag $JOB_NAME:v1.BUILD_ID vinnuvinod752/$JOB_NAME:latest'
                 }
