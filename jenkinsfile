@@ -34,5 +34,15 @@ pipeline {
                 }
             }
         }
+        stage('sonar code analysis'){
+            steps{
+                script{
+                    withSonarQubeEnv(credentialsId: 'sonar-auth') {
+  
+                }
+                }
+            }
+        }
+
     }
 }
