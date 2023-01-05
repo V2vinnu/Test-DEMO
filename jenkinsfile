@@ -3,8 +3,7 @@ pipeline {
         stages {
             stage('git checkout') {
                 steps{
-              
-               git branch: 'main', url: 'https://github.com/V2vinnu/Test-DEMO.git'
+                             git branch: 'main', url: 'https://github.com/V2vinnu/Test-DEMO.git'
             }
             }
         
